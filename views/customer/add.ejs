@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1 style="text-align: center">ADD CUSTOMER PAGE</h1>
+    <button>?</button>
+    <nav>
+      <ul>
+        <li>
+          <a href="/">DasBoard</a>
+        </li>
+        <li>New Customer</li>
+      </ul>
+      <div style="text-align: end; margin-right: 10%">
+        <b>User Id</b>
+      </div>
+    </nav>
+
+    <form action="/add" method="post">
+      <div class="allContainer" style="display: flex; flex-wrap: wrap">
+        <div class="col" style="margin-left: 5%">
+          <label for="FirstName" style="margin-right: 5%">First Name</label>
+          <input
+            type="text"
+            class="FirstName"
+            id="FirstName"
+            name="FirstName"
+            value=""
+            placeholder="First Name"
+            required
+          />
+        </div>
+        <div class="col" style="margin-left: 5%; margin-top: 50px">
+          <label for="LastName" style="margin-right: 5%">Last Name</label>
+          <input
+            type="text"
+            class="LastName"
+            id="LastName"
+            name="LastName"
+            value=""
+            placeholder="Last Name"
+            required
+          />
+        </div>
+        <div class="col" style="margin-left: 5%; margin-top: 50px">
+          <label for="Phone No" style="margin-right: 5%">Phone No</label>
+          <input
+            type="text"
+            class="Phone No"
+            id="Phone No"
+            name="Phone_No"
+            value=""
+            placeholder="Phone No"
+            required
+          />
+        </div>
+        <div class="col" style="margin-left: 5%; margin-top: 50px">
+          <label for="Email" style="margin-right: 5%">Email</label>
+          <input
+            type="text"
+            class="Email"
+            id="Email"
+            name="Email"
+            value=""
+            placeholder="Email"
+            required
+          />
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="details">Customer Details</label>
+
+        <textarea
+          style="margin: 20px 10% 30px 10%"
+          name="Details"
+          class="form-control"
+          id="Details"
+          cols="30"
+          rows="10"
+          placeholder="Customer Details"
+        ></textarea>
+      </div>
+      <div class="btn">
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </div>
+    </form>
+  </body>
+</html>
